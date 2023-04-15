@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link type="text/css" rel="stylesheet" href="./css/juego.css">
+    
+</head>
+<body onload="game.init()">
+    <audio src="./sonido/juego2.mp3" controls autoplay muted></audio>
+    <div id="boton">
+        <button id="nuevoJuegoBtn">Nuevo Juego</button>
+    </div>
+    <!-- Agrega una sección con una imagen, inicialmente oculta -->
+    <section id="seccionImagen">
+    <div class="contenedor">
+        <div class="izquierda">
+            
+            </a>
+            <p>
+                
+            </p>
+            <ul class="lista">
+                <li class="titulo">CONTROLES:</li>
+                <li class="izquierda">izquierda</li>
+                <li class="derecha">derecha</li>
+                <li class="espacio">disparar</li>
+            </ul>
+            
+        </div>
+        <div class="derecha">
+            <h3 class="tituloPuntuaciones">MEJORES PUNTUACIONES</h3>
+            <ul id="puntuaciones"></ul>
+        </div>
+        <div class="juego">
+            <canvas id="canvas" width="600" height="650">TU NAVEGADOR NO SOPORTA HTML5!</canvas>
+        </div>
+
+    </div>
+    </section>
+    <script src="./js/juego.js" type="text/javascript"></script>
+</body>
+</html>
